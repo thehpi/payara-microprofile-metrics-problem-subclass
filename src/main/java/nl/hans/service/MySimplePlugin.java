@@ -10,12 +10,12 @@ public class MySimplePlugin implements Plugin {
   MyBean myBean;
 
   public String getName() {
-    return "my-plugin-1";
+    return "MySimplePlugin";
   }
 
   @SimplyTimed(unit = MetricUnits.MILLISECONDS)
   public String execute() {
     myBean.run();
-    return "This is plugin One";
+    return "This is my simple plugin";
   }
 }
